@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Why?</h2>
-                    <h3 class="section-subheading text-muted">Main reasons for using OGC API Features.</h3>
+                    <h3 class="section-subheading text-muted">Main reasons for using OGC API Processes.</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -63,7 +63,7 @@
                             <i class="fas fa-plug fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Interoperable</h4>
-                        <p class="text-muted">Ensure that your application can read data from existing and new sources without changing how you communicate with them. Ensure that the data you share can be accessed by different clients, without having to share details of your implementation.</p>
+                        <p class="text-muted">Ensure that algorythems are deployable into serverside processing systems. Data can therefore be processed close to theire storage to avoid unnecessary download.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -71,7 +71,7 @@
                             <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Based on Best Practices</h4>
-                        <p class="text-muted">This API is based on the technologies and vocabularies that make up the web today, such as REST, OpenAPI, JSON and HTML. This should ensure a smooth learning curve for any web developer, even if they are not familiar with GIS.</p>
+                        <p class="text-muted">This API is developed and enhanced based on good practise guidance and implemented in productive processing services serving huge number of users with data producs on demand.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -80,7 +80,7 @@
                         </span>
                         <h4 class="my-3">Supported on Existing Products</h4>
                         <p class="text-muted">
-                            You can start using the OGC API Features specification today, by tapping into one of the
+                            You can start using the OGC API Processing specification today, by tapping into one of the
                             <a href="#implementations">existing server or client implementations.</a>
                         </p>
                     </div>
@@ -92,33 +92,27 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Overview</h2>
-                    <h3 class="section-subheading text-muted">OGC API Features provides access to collections of geospatial data.</h3>
+                    <h3 class="section-subheading text-muted">OGC API Processes provides options to process geospatial data remotly.</h3>
                     <img src="assets/img/overview.png" title="Source: https://demo.ldproxy.net/daraa" alt=".." />
                 </div>
                 <div class="text-left">
                     <ul>
                         <li>
-                            <h4>Get collections</h4>
-                            <p class="text-muted">Lists the collections of data on the server that can be queried, and each describes basic information about the geospatial data collection, like its id and description, as well as the spatial and temporal extents of all the data contained.</p>
+                            <h4>Get </h4>
+                            <p class="text-muted">Lists the existing proceses </p>
                         </li>
                         <li>
                             <h4>Get items</h4>
-                            <p class="text-muted">Requests all the data in a given collection. The response format (typically HTML or a GeoJSON feature collection, but GML is supported, too, and extensions can easily supply others) is determined using HTTP content negotiation.</p>
+                            <p class="text-muted">To be written.</p>
                         </li>
                         <li>
-                            <h4>Get feature</h4>
-                            <p class="text-muted">Returns a single 'feature' - something in the real-world (a building, a stream, a county, etc.) that typically is described by a geometry plus other properties. This provides a stable, canonical URL to link to the 'thing'.</p>
+                            <h4>Delete</h4>
+                            <p class="text-muted">Stop a running process</p>
                         </li>
                     </ul>
                 </div>
                 <p class="text-muted">
-                    If you are interested in finding out how-to use other coordinate reference systems, you can
-                    <a href="https://github.com/opengeospatial/ogcapi-features/tree/master/extensions/crs" target="_blank">read this</a>
-                    . You can find
-                    <a href="https://ogcapi.ogc.org/features/" target="_blank">here</a>
-                    links for different parts of the spec and explore it using
-                    <a href="https://app.swaggerhub.com/apis/cportele/ogcapi-features-1-example1/1.0.0" target="_blank">Swagger</a>
-                    .
+                    If you are interested in finding out how-to set up an application you can see this tutorial : TODO: Climate application packages.
                 </p>
             </div>
         </section>
@@ -137,61 +131,11 @@
                     <div class="col-lg-4">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/ldproxy1.png" alt="..." />
-                            <h4>Vineyards in Rhineland-Palatinate, Germany</h4>
-                            <p class="text-muted">Powered by Ldproxy</p>
-                            <p class="text-muted">Have you ever wondered where the wine that you are drinking comes from? If the wine comes from the wine-growing regions Mosel, Nahe, Rheinhessen, Pfalz, Ahr, or Mittelrhein you can find this information in this API.</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://demo.ldproxy.net/vineyards" title="Collection Resource" target="_blank"><i class="fa fa-link"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://demo.ldproxy.net/vineyards/api/" title="OpenAPI definition" target="_blank"><i class="fa fa-code"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/pygeoapi.png" alt="..." />
-                            <h4>Portuguese Points of Interest</h4>
-                            <p class="text-muted">Powered by Pygeoapi</p>
-                            <p class="text-muted">Portuguese Points of Interest obtained from OpenStreetMap. Dataset includes Madeira and Azores islands. Uses GeoPackage backend via OGR provider.</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://demo.pygeoapi.io/master/collections/ogr_gpkg_poi" title="Collection Resource" target="_blank"><i class="fa fa-link"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://demo.pygeoapi.io/master/openapi?f=html" title="OpenAPI definition" target="_blank"><i class="fa fa-code"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/cubewerx.png" alt="..." />
-                            <h4>Zaatari Refugee Camp مخيم الزعتري</h4>
-                            <p class="text-muted">Powered by CubeWerx</p>
-                            <p class="text-muted">Zaatari is a refugee camp in Jordan, located 10 kilometres east of Mafraq, which has gradually evolved into a permanent settlement; it is the world’s largest camp for Syrian refugees.</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.pvretano.com/cubewerx/cubeserv/default/ogcapi/zaatari" title="Collection Resource" target="_blank"><i class="fa fa-link"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.pvretano.com/cubewerx/cubeserv/default/ogcapi/zaatari/api?f=html" title="OpenAPI definition" target="_blank"><i class="fa fa-code"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/os-ngd-api-features.png" alt="..." />
-                            <h4>OS NGD API – Features</h4>
-                            <p class="text-muted">Powered by The OS Data Hub</p>
-                            <p class="text-muted">Easy online access to the OS National Geographic Database, providing a rich and consistent information about the real world.</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://osdatahub.os.uk/" title="Collection Resource" target="_blank"><i class="fa fa-link"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://osngd.gitbook.io/osngd/accessing-os-ngd/access-the-os-ngd-api-features" title="API documentation" target="_blank"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/OSMOttawa.png" alt="..." />
-                            <h4>Ottawa OpenStreetMap roads</h4>
-                            <p class="text-muted">Powered by GNOSIS</p>
-                            <p class="text-muted">OpenStreetMap (OSM) is a free, open geographic database updated and maintained by a community of volunteers via open collaboration. This dataset is an OpenStreetMap extract that contains the roads of Ottawa, Canada.</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://maps.gnosis.earth/ogcapi/collections/osm:ottawa:roads" title="Collection Resource" target="_blank"><i class="fa fa-link"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://maps.gnosis.earth/ogcapi/api" title="OpenAPI definition" target="_blank"><i class="fa fa-code"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/wetlands.png" alt="..." />
-                            <h4>Geographic Objects from the National Cartographic System of Spain</h4>
-                            <p class="text-muted">Powered by pygeoapi</p>
-                            <p class="text-muted">Includes collections such as Hydrography, Transport Networks, CartoCiudad postal addresses and the Information System on Land Occupation of Spain 2014 (SIOSE).</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://api-features.idee.es/collections?f=html&amp;lang=en" title="Collections Resource" target="_blank"><i class="fa fa-link"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://api-features.idee.es/openapi?f=html" title="OpenAPI definition" target="_blank"></a>
+                            <h4>Inpainting missing values </h4>
+                            <p class="text-muted">Powered by CLINT</p>
+                            <p class="text-muted">Description for Duck.</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://clint.dkrz.de" title="CLINT DEMO" target="_blank"><i class="fa fa-link"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://climateintelligence.github.io/smartduck-docs/sections/intro.html" title="Duck process discription" target="_blank"><i class="fa fa-code"></i></a>
                         </div>
                     </div>
                 </div>
